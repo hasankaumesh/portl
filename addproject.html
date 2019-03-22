@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>form </title>
+
+
+
+      <script src="https://www.gstatic.com/firebasejs/5.9.0/firebase.js"></script>
+      <script src="init.js"></script>
+
+    <style media="screen">
+      body{
+        display: flex;
+        min-height: 100vh;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+      }
+
+    </style>
+
+
+  </head>
+  <body>
+    <div id="nameqwe">
+      <form >
+        <table>
+          <tr>
+           <td>Project tittle: </td>
+           <td><input type="text" name="pro_title" id="pro_title" placeholder="project tittle.." /></td>
+          </tr>
+          <tr>
+            <td>Project Category: </td>
+            <td><input type="text" name="pro_cat" id="pro_cat" placeholder="HTML,CSS,JS.."/></td>
+           </tr>
+           <tr>
+            <td>Meta Tag: </td>
+            <td><input type="text" name="pro_tag" id="pro_tag" placeholder="some one tag.."/></td>
+           </tr>
+           <tr>
+            <td>Meta Description: </td>
+            <td><input type="text" name="pro_desc" id="pro_desc" placeholder="some description.." /></td>
+           </tr>
+           <tr>
+            <td>File: </td>
+            <td><input type="file"  id="files" name="files[]" multiple /></td>
+          </tr>
+          <tr>
+            <td><input type="button" value="Upload" onclick="send()"></td>
+          </tr>
+      </form>
+        <script src="send.js"></script>
+
+    </div>
+
+  </body>
+</html>
