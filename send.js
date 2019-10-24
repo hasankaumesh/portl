@@ -1,10 +1,10 @@
 
 
 function send() {
-    var title = document.getElementById('pro_title').value;
-    var cat = document.getElementById('pro_cat').value;
+    var topic = document.getElementById('pro_topic').value;
+    var catagary = document.getElementById('pro_catagary').value;
     var tag = document.getElementById('pro_tag').value;
-    var desc = document.getElementById('pro_desc').value;
+    var description = document.getElementById('pro_description').value;
     var file = document.getElementById('files').value;
 
 
@@ -13,10 +13,10 @@ function send() {
     console.log(userDetails);
     // insert method set or push
     userDetails.push({
-        res_title : title,
-        res_cat : cat,
+        res_topic : topic,
+        res_catagary : catagary,
         res_tag : tag,
-        res_desc : desc,
+        res_description : description,
         res_file : file
     });
     var ref = firebase.storage().ref('Umesh/');
